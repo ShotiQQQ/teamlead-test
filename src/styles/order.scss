@@ -1,0 +1,78 @@
+@import "vars";
+@import "mixins";
+
+.order {
+  &__container {
+    color: $text;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    background: -webkit-linear-gradient(45deg, rgb(63, 135, 202), rgb(181, 206, 35));
+    background: -moz-linear-gradient(45deg, rgb(63, 135, 202), rgb(181, 206, 35));
+    background: linear-gradient(45deg, rgb(63, 135, 202), rgb(181, 206, 35));
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  &__title {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+  &__info {
+    font-size: 28px;
+    margin-bottom: 36px;
+  }
+  &__timer {
+    margin-right: 24px;
+  }
+  &__old-price {
+    font-size: 22px;
+    text-decoration: line-through;
+  }
+  &__count {
+    display: inline-block;
+    animation: 1.5s infinite animate;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+  }
+  &__input {
+    width: 50%;
+    padding: 12px 24px;
+    background: -webkit-linear-gradient(45deg, rgb(60, 86, 111), rgb(157, 172, 68));
+    background: -moz-linear-gradient(45deg, rgb(60, 86, 111), rgb(157, 172, 68));
+    background: linear-gradient(45deg, rgb(60, 86, 111), rgb(157, 172, 68));
+    border: none;
+    border-radius: 10px;
+    color: $text;
+    &::placeholder {
+      color: $text;
+    }
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  &__product {
+
+  }
+  @keyframes animate {
+
+    25% {
+      transform: skew(35deg);
+    }
+    50% {
+      transform: skew(-35deg);
+    }
+    to {
+      transform: skew(0);
+    }
+  }
+}

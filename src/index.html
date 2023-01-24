@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script defer src="./scripts/app.js"></script>
+  <title></title>
+</head>
+<body>
+  <main class="main">
+    <section class="promo">
+      <div class="container promo__container">
+          <video class="promo__video" src="./img/video.mp4" autoplay loop muted></video>
+          <h1 class="promo__title">"LevelUp". Продукт для повышения потенции.</h1>
+          <div class="promo__content">
+            <img class="promo__product" src="./img/prod.png" alt="LevelUp">
+            <ul class="promo__list">
+              <li class="promo__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi esse explicabo laborum perspiciatis, voluptatum! A, aliquid aperiam corporis dolorem eum nobis numquam obcaecati, officia quasi quos repellat sit tempore.
+              </li>
+              <li class="promo__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci laborum nemo quaerat sint. Debitis, doloribus et harum ipsam iusto maiores mollitia neque quos sint velit voluptate, voluptatum. Ipsum, non, repudiandae!
+              </li>
+              <li class="promo__item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi doloremque eveniet laborum nisi officiis quasi quisquam, sunt. Amet distinctio enim modi officia officiis quam, rerum sed! Esse harum illum repellendus.
+              </li>
+            </ul>
+          </div>
+          <a class="btn" href="#order">Заказать</a>
+      </div>
+    </section>
+    <section class="compos">
+      <div class="container compos__container">
+        <div class="compos__content">
+          <ul class="compos__left">
+            <li class="compos__ingredient">
+              something
+            </li>
+            <li class="compos__ingredient">
+              something
+            </li>
+            <li class="compos__ingredient">
+              something
+            </li>
+          </ul>
+          <div class="compos__product">
+            <img src="./img/prod.png" alt="LevelUp">
+          </div>
+          <ul class="compos__right">
+            <li class="compos__ingredient">
+              something
+            </li>
+            <li class="compos__ingredient">
+              something
+            </li>
+            <li class="compos__ingredient">
+              something
+            </li>
+          </ul>
+        </div>
+        <a class="btn" href="#order">Заказать</a>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container reviews__container">
+        <div class="reviews__content swiper">
+          <ul class="reviews__list swiper-wrapper">
+            <li class="reviews__item swiper-slide">
+              <img class="reviews__photo" src="./img/21savage.jpg" alt="21savage">
+              <h2 class="reviews__name">Elon Musk</h2>
+              <p class="reviews__review">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis explicabo inventore ipsa, libero magnam repudiandae sint. A accusantium aspernatur at, aut ducimus enim quam quod recusandae saepe, unde voluptate!
+              </p>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <img class="reviews__photo" src="./img/21savage.jpg" alt="21savage">
+              <h2 class="reviews__name">Tim Cook</h2>
+              <p class="reviews__review">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi error est eum, laudantium obcaecati possimus sit totam? Distinctio exercitationem minima vel? Aperiam ipsum maxime natus necessitatibus non nulla quis ut.
+              </p>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <img class="reviews__photo" src="./img/21savage.jpg" alt="21savage">
+              <h2 class="reviews__name">Bill Gates</h2>
+              <p class="reviews__review">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem in nam pariatur. Accusantium aliquam dicta ea fugiat iste iure, labore maxime nam non quas quibusdam quis ratione similique suscipit veniam!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="promo2">
+      <div class="promo2__container container">
+        <div class="promo2__content">
+          <div class="promo2__top">
+            <img class="promo2__img" src="./img/doctor.png" alt="Доктор показывает средство для потенции">
+            <p class="promo2__descr">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda consequuntur culpa deleniti deserunt est facere illo, ipsum, magnam nam non nostrum odit porro quas repellendus voluptates voluptatum. Animi, sint?
+            </p>
+          </div>
+          <ul class="promo2__list">
+            <li class="promo2__item">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, natus.
+            </li>
+            <li class="promo2__item">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, inventore.
+            </li>
+            <li class="promo2__item">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, nulla.
+            </li>
+          </ul>
+        </div>
+        <a class="btn" href="#order">Заказать</a>
+      </div>
+    </section>
+    <section class="order" id="order">
+      <div class="order__container container">
+        <div class="order__content">
+          <h2 class="order__title">"LevelUp". Продукт для повышения потенции.</h2>
+          <div class="order__info">
+            <span class="order__timer" id="timer">30</span>
+            <span class="order__old-price">8841</span>
+            <span class="order__price"><span class="order__count">1337</span> руб.</span>
+          </div>
+          <div class="order__bottom">
+            <form class="order__form" id="form-order">
+              <input class="order__input" type="text" placeholder="Ваше имя">
+              <input class="order__input" type="number" placeholder="Ваш номер телефона">
+              <button class="btn">Заказать</button>
+            </form>
+            <img class="order__product" src="./img/prod.png" alt="LevelUp">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

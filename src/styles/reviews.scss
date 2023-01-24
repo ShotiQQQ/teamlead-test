@@ -1,0 +1,25 @@
+@import "mixins";
+@import "vars";
+
+.reviews {
+  margin-bottom: 24px;
+  &__container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: -webkit-linear-gradient(45deg, rgb(176, 207, 154), rgb(82, 85, 182));
+    background: -moz-linear-gradient(45deg, rgb(176, 207, 154), rgb(82, 85, 182));
+    background: linear-gradient(45deg, rgb(176, 207, 154), rgb(82, 85, 182));
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  &__content {
+    color: $text;
+    max-width: 500px;
+  }
+  &__photo {
+    margin-bottom: 24px;
+  }
+  &__name {
+    margin-bottom: 12px;
+  }
+}

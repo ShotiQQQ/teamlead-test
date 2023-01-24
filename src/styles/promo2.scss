@@ -1,0 +1,41 @@
+@import "vars";
+@import "mixins";
+
+.promo2 {
+  margin-bottom: 24px;
+  &__container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: -webkit-linear-gradient(45deg, rgb(202, 93, 63), rgb(182, 82, 166));
+    background: -moz-linear-gradient(45deg, rgb(202, 93, 63), rgb(182, 82, 166));
+    background: linear-gradient(45deg, rgb(202, 93, 63), rgb(182, 82, 166));
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  &__content {
+    margin-bottom: 50px;
+    color: $text;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 33%;
+    margin-bottom: 24px;
+    margin-right: 24px;
+  }
+  &__descr {
+    margin-bottom: 12px;
+  }
+  &__list {
+    display: flex;
+    list-style: disc;
+  }
+  &__item {
+    width: calc(33.3% - 8px);
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
