@@ -138,8 +138,14 @@
           </div>
           <div class="order__bottom">
             <form class="order__form" id="form-order">
-              <input class="order__input" type="text" placeholder="Ваше имя">
-              <input class="order__input" type="number" placeholder="Ваш номер телефона">
+              <div class="order__wrapper-input order__wrapper-input--name">
+                <input class="order__input order__input--name" type="text" placeholder="Ваше имя">
+                <span class="order__note">Денис</span>
+              </div>
+              <div class="order__wrapper-input order__wrapper-input--tel">
+                <input class="order__input order__input--tel" type="number" placeholder="Ваш номер телефона">
+                <span class="order__note">+79940034070</span>
+              </div>
               <button class="btn">Заказать</button>
             </form>
             <img class="order__product" src="./img/prod.png" alt="LevelUp">
