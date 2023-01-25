@@ -2,10 +2,9 @@
 @import "mixins";
 
 .order {
-  &__container {
+  &__content {
     color: $text;
-    padding-bottom: 24px;
-    padding-top: 24px;
+    padding: 24px;
     background: -webkit-linear-gradient(45deg, rgb(63, 135, 202), rgb(181, 206, 35));
     background: -moz-linear-gradient(45deg, rgb(63, 135, 202), rgb(181, 206, 35));
     background: linear-gradient(45deg, rgb(63, 135, 202), rgb(181, 206, 35));
@@ -15,6 +14,9 @@
   &__title {
     font-size: 36px;
     margin-bottom: 12px;
+    @media (max-width: 550px) {
+      font-size: 32px;
+    }
   }
   &__info {
     font-size: 28px;
@@ -34,12 +36,23 @@
   &__bottom {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 660px) {
+      flex-direction: column;
+    }
   }
   &__form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    @media (max-width: 768px) {
+      margin-right: 24px;
+    }
+    @media (max-width: 660px) {
+      margin-right: 0;
+      order: 2;
+      width: 100%;
+    }
   }
   &__input {
     width: 50%;
@@ -59,9 +72,24 @@
     &:not(:last-child) {
       margin-bottom: 12px;
     }
+    @media (max-width: 1024px) {
+      width: 75%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    @media (max-width: 660px) {
+      width: 50%;
+    }
+    @media (max-width: 550px) {
+      width: 100%;
+    }
   }
   &__product {
-
+    @media (max-width: 660px) {
+      max-width: 50%;
+      margin-bottom: 24px;
+    }
   }
   @keyframes animate {
 

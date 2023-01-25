@@ -14,10 +14,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.main {
-  padding-top: 24px;
-}
-
 *,
 *::before,
 *::after {
@@ -67,4 +63,9 @@ ul {
   padding: 16px 24px;
   background-color: $btn;
   border-radius: 10px;
+}
+
+.main {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
